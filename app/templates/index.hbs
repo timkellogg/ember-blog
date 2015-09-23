@@ -8,11 +8,8 @@
 	<hr>
 
 	<div id="article-container">
-			{{#each model as |article|}}
-			<div class="individual-article text-center">
-				<h2 class="article-title">{{article.title}}</h2>
-				<p class="lead">{{article.categories}}</p>
-			</div>
-			{{/each}}
+		{{#each model as |article|}}
+			{{article-tile article=article}}
+		{{/each}}
 	</div>
 </div>
